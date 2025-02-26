@@ -1,0 +1,76 @@
+:root{
+  font-family: "Ubuntu", serif;
+  font-style: normal
+}
+
+* {
+  box-sizing: border-box;
+}
+body{
+  background-image: linear-gradient(to right, #121524 25%, #0E3052 );
+}
+h2 {
+  margin-top: .5rem;
+  color: #c8d0da;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 160%;
+}
+section{
+  background-color: #191d24;
+  padding: 2rem;
+  margin: auto;
+  border: 1px solid #21252c;
+  border-radius: 1.5rem;
+  height: 300px;
+   max-width: 400px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+  height: 3rem;
+  padding: 0 1rem;
+}
+input{
+  padding: 1rem;
+}
+button{
+  border: 0;
+  background: #2a313c;
+  color: #6f9de2;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+  position: relative;
+  top: 40px;
+
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 160%;
+
+  cursor: pointer;
+  transition: filter .2s;
+}
+
+button:hover{
+  filter: brightness(1.1);
+}
+
+p{
+  margin-top: .5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 160%;
+
+
+  text-align: center;
+  color: #c8d0da;
+}

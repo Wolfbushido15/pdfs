@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de PDF</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <header>
+    <h2>Faça o upload de um PDF para tradução</h2>
+  </header>
+    
+  <section>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" id="pdfFile" name="file" accept="application/pdf" required>
+        <button type="submit">Traduzir PDF</button>
+    </form>
+  </section>
+
+  <p id="status"></p>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
